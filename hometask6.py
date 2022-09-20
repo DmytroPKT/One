@@ -18,7 +18,7 @@ width = int(input('Enter №3 triangle width: '))
 symbol = "*"
 space_length = 0
 while width > 0:
-    print(" " * space_length, width * symbol, sep="")
+    print(" " * space_length + width * symbol)
     width -= 1
     space_length += 1
 
@@ -29,4 +29,4 @@ height = 0
 while height < width:
     height += 1
     space_length = width - height
-    print(" " * space_length, height * symbol, sep="")
+    print(" " * space_length + height * symbol)
