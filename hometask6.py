@@ -31,3 +31,4 @@ while length < width:
     length += 1
     space_length = width - length
     print(" " * space_length, length * symbol, sep="")
+    
