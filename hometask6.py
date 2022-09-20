@@ -8,10 +8,10 @@ while width > 0:
 # Second task
 width = int(input('Enter №2 triangle width:  '))
 symbol = "*"
-length = 0
-while length < width:
-    length += 1
-    print(length * symbol)
+height = 0
+while height < width:
+    height += 1
+    print(height * symbol)
 
 # Third task
 width = int(input('Enter №3 triangle width: '))
@@ -25,8 +25,8 @@ while width > 0:
 # Fourth task
 width = int(input('Enter №4 triangle width: '))
 symbol = "*"
-length = 0
-while length < width:
-    length += 1
-    space_length = width - length
-    print(" " * space_length, length * symbol, sep="")
+height = 0
+while height < width:
+    height += 1
+    space_length = width - height
+    print(" " * space_length, height * symbol, sep="")
