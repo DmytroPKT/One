@@ -25,10 +25,8 @@ while width > 0:
 # Fourth task
 width = int(input('Enter №4 triangle width: '))
 symbol = "*"
-space_length = 0
 length = 0
 while length < width:
     length += 1
     space_length = width - length
     print(" " * space_length, length * symbol, sep="")
-    
