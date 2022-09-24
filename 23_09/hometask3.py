@@ -20,26 +20,26 @@
 
 import random
 
-random_number = random.randint(1, 10)
-attempts = 1
-
-input_number = int(input('''Welcome to the annual lottery!
+print('''Welcome to the annual lottery!
 You have to guess a random number from 1 to 10.
-You only have 3 attempts!
-Attempt No''' + str(attempts) + '. Enter a number: '))
+You only have 3 attempts!''')
+random_number = random.randint(1, 10)
+print(random_number)
 
-for attempts in range(2, 4):
+for attempts in range(1, 4):
 
-    if input_number > random_number:
+    import_number = int(input('Attempt No' + str(attempts) + '. Enter a number: '))
+
+    if import_number == random_number:
+        print('YOU WON!!!!!!!!!!!!!!!111111111')
+        exit()
+    elif import_number != random_number and attempts == 3:
+        print('YOU LOSE!!!!!!!!!!!!1111111')
+        exit()
+
+    elif import_number > random_number:
         print('Take less')
-        input_number = int(input('Attempt No' + str(attempts) + '. Enter a number: '))
 
-    elif input_number < random_number:
+    elif import_number < random_number:
         print('Take more')
-        input_number = int(input('Attempt No' + str(attempts) + '. Enter a number: '))
-
-if input_number == random_number:
-    print('YOU WON!!!!!!!!!!!!!!!111111111')
-
-else:
-    print('YOU LOSE!!!!!!!!!!!!1111111')
+exit()
