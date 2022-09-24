@@ -12,6 +12,6 @@ shift = int(input('Enter desired number shift: '))
 output_text = ''  # Empty at the start
 
 for letters in input_text:
-    output_text = output_text + (chr(ord(letters) + shift))
+    output_text += chr(ord(letters) + shift)
 
 print(output_text)
