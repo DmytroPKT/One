@@ -24,7 +24,6 @@ print('''Welcome to the annual lottery!
 You have to guess a random number from 1 to 10.
 You only have 3 attempts!''')
 random_number = random.randint(1, 10)
-print(random_number)
 
 for attempts in range(1, 4):
 
